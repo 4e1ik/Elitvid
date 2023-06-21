@@ -1,0 +1,40 @@
+.container {
+  margin: 0 100px 0 100px;
+}
+
+header {
+  background-color: black;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__main {
+  width: 250px;
+  height: 70px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  width: 300px;
+  overflow: hidden;
+}
+.nav__list a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
