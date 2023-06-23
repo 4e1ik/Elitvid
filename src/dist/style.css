@@ -2,6 +2,17 @@
   margin: 0 100px 0 100px;
 }
 
+.background {
+  background: #000;
+  width: 100%;
+  height: 100px;
+}
+.background .background-img {
+  width: 100%;
+  position: fixed;
+  opacity: 0.5;
+}
+
 header {
   background-color: black;
   display: block;
@@ -12,9 +23,19 @@ header {
   z-index: 1;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header__main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav__burger {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -25,16 +46,39 @@ header {
 
 .nav__list {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
+  flex: 1;
+  justify-content: center;
   align-items: center;
-  width: 300px;
-  overflow: hidden;
 }
 .nav__list a {
   color: white;
   font-size: 22px;
   text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav__list li:hover > .nav__sublist {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.nav__list .nav__sublist {
+  position: absolute;
+  z-index: 1;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  margin: 16px 0 0 -30px;
+}
+.nav__list .nav__sublist a {
+  padding: 15px 10px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #000;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
