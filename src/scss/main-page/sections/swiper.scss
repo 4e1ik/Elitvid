@@ -1,8 +1,9 @@
 .swiper__main {
   padding-top: 90px;
+  box-shadow: 0px 45px 45px 14px rgba(0, 0, 0, 0.5);
 
   .container {
-    display: block;
+    margin:auto;
   }
 
   .visibility-hidden {
@@ -11,14 +12,11 @@
   }
 
   .swiper-wrapper {
-    height: 20%;
     background: #000;
   }
 
   img {
     width: 100%;
-    height: auto;
-
     opacity: .5;
   }
 
@@ -28,8 +26,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -29em;
+    position: absolute;
+    top: 20%;
+    left: 18.75%;
     width: 62.5%;
     margin: auto;
   }
@@ -51,10 +50,14 @@
     }
   }
 
+  dl {
+    width: 62.5%;
+  }
+
   .swiper__text-count {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 100%;
   }
 
   .text-count__item {

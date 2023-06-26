@@ -24,7 +24,6 @@ header {
   margin: auto;
   z-index: 2;
   height: 90px;
-  line-height: 3em;
 }
 
 ul {
@@ -87,21 +86,20 @@ ul {
 
 .swiper__main {
   padding-top: 90px;
+  box-shadow: 0px 45px 45px 14px rgba(0, 0, 0, 0.5);
 }
 .swiper__main .container {
-  display: block;
+  margin: auto;
 }
 .swiper__main .visibility-hidden {
   visibility: hidden;
   height: 0;
 }
 .swiper__main .swiper-wrapper {
-  height: 20%;
   background: #000;
 }
 .swiper__main img {
   width: 100%;
-  height: auto;
   opacity: 0.5;
 }
 .swiper__main .swiper__text {
@@ -110,8 +108,9 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: -29em;
+  position: absolute;
+  top: 20%;
+  left: 18.75%;
   width: 62.5%;
   margin: auto;
 }
@@ -131,10 +130,13 @@ ul {
   font-size: 1.15em;
   font-weight: 400;
 }
+.swiper__main dl {
+  width: 62.5%;
+}
 .swiper__main .swiper__text-count {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 100%;
 }
 .swiper__main .text-count__item {
   display: flex;
