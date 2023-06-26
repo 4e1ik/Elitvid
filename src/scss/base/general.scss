@@ -1,10 +1,10 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url("../../images/main/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/main/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-size: 20px;
 }
 
 .container {
@@ -30,8 +30,3 @@ section {
 //    filter: brightness(40%);
 //  }
 //}
-
-.swiper__main {
-  padding-top: 90px;
-}
-

@@ -1,9 +1,10 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/main/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/main/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-size: 20px;
 }
 
 .container {
@@ -12,10 +13,6 @@ body {
 
 section {
   z-index: 1;
-}
-
-.swiper__main {
-  padding-top: 90px;
 }
 
 header {
@@ -58,7 +55,7 @@ ul {
 }
 .nav__list a {
   color: white;
-  font-size: 22px;
+  font-size: 1.1em;
   text-decoration: none;
   padding: 15px;
   cursor: pointer;
@@ -82,9 +79,76 @@ ul {
 .nav__list .nav__sublist a {
   padding: 15px 10px;
   background-color: #fff;
-  font-size: 18px;
+  font-size: 0.9em;
   color: #000;
   display: block;
+}
+
+.swiper__main {
+  padding-top: 90px;
+}
+.swiper__main .container {
+  display: block;
+}
+.swiper__main .visibility-hidden {
+  visibility: hidden;
+  height: 0;
+}
+.swiper__main .swiper-wrapper {
+  height: 20%;
+  background: #000;
+}
+.swiper__main img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.swiper__main .swiper__text {
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -29em;
+  width: 62.5%;
+  margin: auto;
+}
+.swiper__main .swiper__text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+}
+.swiper__main .swiper__text-main h1 {
+  font-size: 2em;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.swiper__main .swiper__text-main h2 {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+.swiper__main .swiper__text-count {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+.swiper__main .text-count__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 9%;
+}
+.swiper__main .text-count__item dt {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+.swiper__main .text-count__item dd {
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
