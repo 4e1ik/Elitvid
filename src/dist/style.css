@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/main/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("src/images/main/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,6 +24,7 @@ header {
   margin: auto;
   z-index: 2;
   height: 90px;
+  line-height: 3em;
 }
 
 ul {
