@@ -6,7 +6,6 @@ header {
   right: 0;
   margin: auto;
   z-index: 2;
-  //height: 4.5em;
 }
 
 ul {
@@ -17,10 +16,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  img {
-    //margin-top: 0.5em;
-  }
 }
 
 .nav__burger {
@@ -44,8 +39,6 @@ ul {
     color: white;
     font-size: 1.1em;
     text-decoration: none;
-    //padding: 0.75em;
-    //width: 1.5em;
     padding: 1.425em 1em;
     cursor: pointer;
     display: inline-block;

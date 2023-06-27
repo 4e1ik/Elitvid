@@ -1,6 +1,6 @@
 .swiper__main {
-  padding-top: 90px;
-  box-shadow: 0px 45px 45px 14px rgba(0, 0, 0, 0.5);
+  padding-top: 4.5em;
+  box-shadow: 0em 2.25em 2.25em 0.7em rgba(0, 0, 0, 0.5);
 
   .container {
     margin:auto;
@@ -29,6 +29,7 @@
     position: absolute;
     top: 15em;
     left: 18.75%;
+    //left: 18em;
     width: 62.5%;
     margin: auto;
   }
@@ -41,10 +42,10 @@
     margin-bottom: 10%;
     h1 {
       font-size: 2em;
-      margin-bottom: 5%;
       text-align: center;
     }
     h2 {
+      margin-top: 5%;
       font-size: 1.15em;
       font-weight: 400;
     }
