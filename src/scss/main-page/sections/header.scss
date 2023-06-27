@@ -6,19 +6,21 @@ header {
   right: 0;
   margin: auto;
   z-index: 2;
-  height: 90px;
-  //line-height: 3em;
+  //height: 4.5em;
 }
 
 ul {
   list-style-type: none;
 }
 
-
 .header__main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  img {
+    //margin-top: 0.5em;
+  }
 }
 
 .nav__burger {
@@ -28,8 +30,8 @@ ul {
 }
 
 .logo__main {
-  width: 250px;
-  height: 70px;
+  width: 12.5em;
+  height: 3.5em;
 }
 
 .nav__list {
@@ -41,11 +43,18 @@ ul {
   a {
     color: white;
     font-size: 1.1em;
-    //font-size: 22px;
     text-decoration: none;
-    padding: 15px;
+    //padding: 0.75em;
+    //width: 1.5em;
+    padding: 1.425em 1em;
     cursor: pointer;
     display: inline-block;
+  }
+
+  a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.3s ease-out;
   }
 
   li:hover > .nav__sublist {
@@ -62,14 +71,20 @@ ul {
     transition: .3s ease-out;
     visibility: hidden;
     opacity: 0;
-    margin: 16px 0 0 -30px;
+    //margin: 0.85em 0 0 0px;
 
     a {
-      padding: 15px 10px;
+      padding: 0.5em 0.48em;
       background-color: #fff;
       font-size: 0.9em;
       color: #000;
       display: block;
+    }
+
+    a:hover {
+      background-color: #acacac;
+      color: #ffffff;
+      transition: 0.3s ease-out;
     }
   }
 }

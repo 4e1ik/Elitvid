@@ -24,7 +24,6 @@ header {
   right: 0;
   margin: auto;
   z-index: 2;
-  height: 90px;
 }
 
 ul {
@@ -36,7 +35,6 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav__burger {
   display: flex;
   justify-content: center;
@@ -44,8 +42,8 @@ ul {
 }
 
 .logo__main {
-  width: 250px;
-  height: 70px;
+  width: 12.5em;
+  height: 3.5em;
 }
 
 .nav__list {
@@ -58,9 +56,14 @@ ul {
   color: white;
   font-size: 1.1em;
   text-decoration: none;
-  padding: 15px;
+  padding: 1.425em 1em;
   cursor: pointer;
   display: inline-block;
+}
+.nav__list a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s ease-out;
 }
 .nav__list li:hover > .nav__sublist {
   visibility: visible;
@@ -75,14 +78,18 @@ ul {
   transition: 0.3s ease-out;
   visibility: hidden;
   opacity: 0;
-  margin: 16px 0 0 -30px;
 }
 .nav__list .nav__sublist a {
-  padding: 15px 10px;
+  padding: 0.5em 0.48em;
   background-color: #fff;
   font-size: 0.9em;
   color: #000;
   display: block;
+}
+.nav__list .nav__sublist a:hover {
+  background-color: #acacac;
+  color: #ffffff;
+  transition: 0.3s ease-out;
 }
 
 .swiper__main {
@@ -110,7 +117,7 @@ ul {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 20%;
+  top: 15em;
   left: 18.75%;
   width: 62.5%;
   margin: auto;
