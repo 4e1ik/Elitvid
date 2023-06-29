@@ -66,6 +66,16 @@ ul {
     opacity: 0;
     //margin: 0.85em 0 0 0px;
 
+    li {
+      position: relative;
+    }
+
+    .nav__sublist {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+
     a {
       padding: 0.5em 0.48em;
       background-color: #fff;
