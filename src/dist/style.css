@@ -95,7 +95,7 @@ section {
 .second_section-header {
   display: flex;
   justify-content: center;
-  margin: 2em 10em 0em 10em;
+  margin: 2em 10em 0 10em;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 1em 0;
@@ -204,7 +204,11 @@ section {
   height: 20em;
   border-radius: 15px;
   background-color: #ffffff;
-  margin-top: 1.5em;
+  margin: 1.5em 0 0 1.7em;
+}
+
+.product__item-card:nth-child(4n+1) {
+  margin: 1.5em 0 0 0;
 }
 
 .product__card-header {
@@ -537,18 +541,6 @@ header {
 
 .gallery__main .gallery__main-header {
   margin: 0 12.625em 0 12.625em;
-}
-
-.product__main-items {
-  justify-content: space-between;
-}
-
-.product__main-items {
-  justify-content: space-between;
-}
-
-.product__main-items {
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
