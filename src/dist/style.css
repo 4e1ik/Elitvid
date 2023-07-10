@@ -33,6 +33,10 @@ section {
   padding-top: 4.5em;
 }
 
+header {
+  box-shadow: 0px 2.25em 2.25em 0.7em rgba(0, 0, 0, 0.5);
+}
+
 .catalog__main-items {
   display: flex;
   justify-content: start;
@@ -289,6 +293,8 @@ ul {
   font-size: 1.1em;
   text-decoration: none;
   padding: 1.425em 1em;
+  width: 7em;
+  text-align: center;
   cursor: pointer;
   display: inline-block;
 }
@@ -317,10 +323,11 @@ ul {
 .nav__list .nav__sublist .nav__sublist {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: -100%;
 }
 .nav__list .nav__sublist a {
   padding: 0.5em 0.48em;
+  width: 8.55em;
   background-color: #fff;
   font-size: 0.9em;
   color: #000;
@@ -364,7 +371,7 @@ footer .footer__logo p {
 footer .footer__menu {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 }
 footer .footer__contact {
   display: flex;
@@ -521,14 +528,6 @@ footer .developed h5:hover {
 .swiper__main .text-count__item dd {
   font-size: 0.9em;
   font-weight: 300;
-}
-
-header {
-  box-shadow: 0px 2.25em 2.25em 0.7em rgba(0, 0, 0, 0.5);
-}
-
-header {
-  box-shadow: 0px 2.25em 2.25em 0.7em rgba(0, 0, 0, 0.5);
 }
 
 .pots__main .catalog__main-items {

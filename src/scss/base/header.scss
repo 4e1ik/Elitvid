@@ -40,6 +40,8 @@ ul {
     font-size: 1.1em;
     text-decoration: none;
     padding: 1.425em 1em;
+    width: 7em;
+    text-align: center;
     cursor: pointer;
     display: inline-block;
   }
@@ -64,7 +66,6 @@ ul {
     transition: .3s ease-out;
     visibility: hidden;
     opacity: 0;
-    //margin: 0.85em 0 0 0px;
 
     li {
       position: relative;
@@ -73,11 +74,12 @@ ul {
     .nav__sublist {
       position: absolute;
       top: 0;
-      left: 100%;
+      left: -100%;
     }
 
     a {
       padding: 0.5em 0.48em;
+      width: 8.55em;
       background-color: #fff;
       font-size: 0.9em;
       color: #000;
