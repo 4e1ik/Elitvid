@@ -384,12 +384,12 @@ footer h4 {
 }
 footer .footer__number {
   display: flex;
-  justify-content: space-between;
-  width: 12em;
+  justify-content: start;
 }
 footer .footer__number a {
   text-decoration: none;
   color: #ffffff;
+  margin-left: 0.5em;
 }
 footer .footer__icons {
   display: flex;
@@ -412,10 +412,13 @@ footer .footer__social-media {
 footer .footer__social-media a {
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
+}
+footer .footer__social-media p {
+  margin-left: 0.25em;
 }
 footer .footer__social-media_item {
   display: block;
@@ -423,7 +426,6 @@ footer .footer__social-media_item {
 footer .footer__social-media_icon {
   display: flex;
   justify-content: space-between;
-  width: 1.5em;
 }
 footer .footer__social-media_icon img {
   width: 1em;
@@ -438,6 +440,23 @@ footer .footer__nav-list a {
 footer .footer__nav-list li:hover {
   transition: 1s ease-out;
   transform: scale(1.05);
+}
+footer h5 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+footer .footer__mail_item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1em;
+}
+footer .footer__mail_item img {
+  width: 1em;
+  height: 1em;
+  color: #ffffff;
+}
+footer .footer__mail_item p {
+  margin-left: 0.25em;
 }
 footer .developed {
   display: flex;

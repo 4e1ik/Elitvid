@@ -53,12 +53,12 @@ footer {
 
   .footer__number {
     display: flex;
-    justify-content: space-between;
-    width: 12em;
+    justify-content: start;
 
     a {
       text-decoration: none;
       color: #ffffff;
+      margin-left: 0.5em;
     }
   }
 
@@ -85,10 +85,14 @@ footer {
     a {
       cursor: pointer;
       display: flex;
-      justify-content: space-between;
+      justify-content: start;
       align-items: center;
       text-decoration: none;
       color: #ffffff;
+    }
+
+    p {
+      margin-left: 0.25em;
     }
   }
 
@@ -99,13 +103,13 @@ footer {
   .footer__social-media_icon {
     display: flex;
     justify-content: space-between;
-    width: 1.5em;
 
     img {
       width: 1em;
       height: 1em;
       color: #ffffff;
     }
+
   }
 
   .footer__nav-list {
@@ -121,6 +125,28 @@ footer {
       transform: scale(1.05);
     }
   }
+
+  h5 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .footer__mail_item {
+    display: flex;
+    justify-content: space-between;
+    //width: 7.75em;
+    line-height: 1em;
+
+    img {
+      width: 1em;
+      height: 1em;
+      color: #ffffff;
+    }
+
+    p {
+      margin-left: 0.25em;
+    }
+ }
 
   .developed {
     display: flex;
