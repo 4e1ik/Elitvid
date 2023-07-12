@@ -173,3 +173,26 @@ footer {
   }
 }
 
+@media (min-width: 1600px) {
+  footer {
+    .footer__menu {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  footer {
+    .footer__menu {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    .footer__menu {
+      width: 50%;
+    }
+  }
+}
