@@ -262,15 +262,43 @@ details p {
   body {
     font-size: 14px;
   }
+
+  .catalog__card-header {
+    width: 15em;
+  }
 }
 @media (max-width: 768px) {
   body {
     font-size: 12px;
   }
 }
+@media (max-width: 621px) {
+  .catalog__main-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog__item-card {
+    width: 30em;
+    height: 41.25em;
+  }
+
+  .catalog__card-header h3 {
+    font-size: 2em;
+  }
+}
 @media (max-width: 480px) {
   body {
     font-size: 11px;
+  }
+
+  .catalog__item-card {
+    width: 25em;
+    height: 34.35em;
+  }
+
+  .catalog__card-header h3 {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 320px) {
@@ -370,6 +398,15 @@ ul {
   transition: 0.3s ease-out;
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+}
 @media (max-width: 480px) {
   nav {
     display: none;
@@ -519,19 +556,30 @@ footer .developed h5:hover {
   transform: scale(1.05);
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
   footer .footer__menu {
     width: 50%;
   }
 }
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   footer .footer__menu {
     width: 50%;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  footer .footer__logo {
+    width: 30%;
+  }
   footer .footer__menu {
-    width: 50%;
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer__logo {
+    display: none;
+  }
+  footer .footer__menu {
+    width: 100%;
   }
 }
 .swiper__main {
@@ -607,55 +655,15 @@ footer .developed h5:hover {
 @media (max-width: 1600px) {
   .swiper__main .swiper__text {
     top: 10em;
+    left: 15%;
+    width: 70%;
   }
-}
-@media (max-width: 1280px) {
-  .swiper__main .swiper__text {
-    top: 8em;
+  .swiper__main .swiper-wrapper {
+    height: 40em;
   }
-}
-@media (max-width: 1024px) {
-  .swiper__main .swiper__text {
-    top: 7em;
-  }
-}
-@media (max-width: 768px) {
-  .swiper__main .swiper__text {
-    top: 8em;
-  }
-  .swiper__main .swiper__text-main h1 {
-    font-size: 1.25em;
-  }
-  .swiper__main .swiper__text-main h2 {
-    font-size: 1em;
-  }
-  .swiper__main .text-count__item dt {
-    font-size: 1.5em;
-  }
-  .swiper__main .text-count__item dd {
-    font-size: 0.5em;
-  }
-}
-@media (max-width: 480px) {
-  .swiper__main .swiper__text {
-    top: 7.5em;
-  }
-  .swiper__main .swiper__text-main h1 {
-    font-size: 1em;
-  }
-  .swiper__main .swiper__text-main h2 {
-    font-size: 0.75em;
-  }
-  .swiper__main .text-count__item dt {
-    font-size: 1em;
-  }
-  .swiper__main .text-count__item dd {
-    font-size: 0.25em;
-  }
-}
-@media (max-width: 320px) {
-  .swiper__main .swiper__text {
-    top: 6.5em;
+  .swiper__main img {
+    height: 40em;
+    object-fit: cover;
   }
 }
 .pots__main .catalog__main-items {

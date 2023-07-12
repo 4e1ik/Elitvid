@@ -1,8 +1,9 @@
 .swiper__main {
   padding-top: 4.5em;
   box-shadow: 0 2.25em 2em 1.5em rgba(0, 0, 0, 0.5);
+
   .container {
-    margin:auto;
+    margin: auto;
   }
 
   .visibility-hidden {
@@ -28,7 +29,9 @@
     position: absolute;
     top: 15em;
     left: 18.75%;
+    //left: 24em;
     width: 62.5%;
+    //width: 60em;
     margin: auto;
   }
 
@@ -38,10 +41,12 @@
     align-items: center;
     text-transform: uppercase;
     margin-bottom: 10%;
+
     h1 {
       font-size: 2em;
       text-align: center;
     }
+
     h2 {
       margin-top: 5%;
       font-size: 1.15em;
@@ -83,89 +88,54 @@
   .swiper__main {
     .swiper__text {
       top: 10em;
+      left: 15%;
+      width: 70%;
+    }
+
+    .swiper-wrapper {
+      height: 40em;
+    }
+
+    img {
+      height: 40em;
+      object-fit: cover;
     }
   }
 }
-
-@media (max-width: 1280px) {
-
-  .swiper__main {
-    .swiper__text {
-      top: 8em;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-
-  .swiper__main {
-    .swiper__text {
-      top: 7em;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-
-  .swiper__main {
-    .swiper__text {
-      top: 8em;
-    }
-
-    .swiper__text-main {
-      h1 {
-        font-size: 1.25em;
-      }
-      h2 {
-        font-size: 1em;
-      }
-    }
-
-    .text-count__item {
-      dt {
-        font-size: 1.5em;
-      }
-
-      dd {
-        font-size: 0.5em;
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-
-  .swiper__main {
-    .swiper__text {
-      top: 7.5em;
-    }
-
-    .swiper__text-main {
-      h1 {
-        font-size: 1em;
-      }
-      h2 {
-        font-size: 0.75em;
-      }
-    }
-
-    .text-count__item {
-      dt {
-        font-size: 1em;
-      }
-
-      dd {
-        font-size: 0.25em;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-
-  .swiper__main {
-    .swiper__text {
-      top: 6.5em;
-    }
-  }
-}
+//
+//@media (max-width: 480px) {
+//
+//  .swiper__main {
+//    .swiper__text {
+//      top: 7.5em;
+//    }
+//
+//    .swiper__text-main {
+//      h1 {
+//        font-size: 1em;
+//      }
+//      h2 {
+//        font-size: 0.75em;
+//      }
+//    }
+//
+//    .text-count__item {
+//      dt {
+//        font-size: 1em;
+//      }
+//
+//      dd {
+//        font-size: 0.25em;
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: 320px) {
+//
+//  .swiper__main {
+//    .swiper__text {
+//      top: 6.5em;
+//    }
+//  }
+//}

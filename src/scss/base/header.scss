@@ -98,14 +98,7 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
-
-  .header__main {
-    //display: flex;
-    //justify-content: space-between;
-    //align-items: center;
-    //text-align: center;
-  }
+@media (max-width: 768px) {
 
   nav {
     display: none;
@@ -114,5 +107,20 @@ ul {
   .header__mobile-menu {
     display: block;
   }
+
+
+}
+
+@media (max-width: 480px) {
+
+  nav {
+    display: none;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+
+
 }
 

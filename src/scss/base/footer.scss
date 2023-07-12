@@ -173,7 +173,7 @@ footer {
   }
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
   footer {
     .footer__menu {
       width: 50%;
@@ -181,7 +181,7 @@ footer {
   }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   footer {
     .footer__menu {
       width: 50%;
@@ -189,10 +189,26 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   footer {
+    .footer__logo {
+      width: 30%;
+    }
+
     .footer__menu {
-      width: 50%;
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer__logo {
+      display: none;
+    }
+
+    .footer__menu {
+      width: 100%;
     }
   }
 }
