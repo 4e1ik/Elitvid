@@ -399,7 +399,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  nav {
+  .header__menu {
     display: none;
   }
 
@@ -408,10 +408,6 @@ ul {
   }
 }
 @media (max-width: 480px) {
-  nav {
-    display: none;
-  }
-
   .header__mobile-menu {
     display: block;
   }
