@@ -100,6 +100,12 @@ ul {
 
 @media (max-width: 768px) {
 
+  .nav__list {
+    a {
+      font-size: 2em;
+    }
+  }
+
   .header__menu {
     display: none;
   }

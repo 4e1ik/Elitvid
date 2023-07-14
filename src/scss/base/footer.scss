@@ -214,5 +214,29 @@ footer {
       align-items: center;
       gap: 1em;
     }
+
+    .footer__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__catalog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__working-time {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

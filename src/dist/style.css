@@ -248,9 +248,18 @@ details p {
   font-size: 0.75em;
 }
 
+@media (max-width: 1901px) {
+  .catalog__main-items {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 1600px) {
   body {
     font-size: 18px;
+  }
+
+  .catalog__main-items {
+    justify-content: space-between;
   }
 }
 @media (max-width: 1280px) {
@@ -399,6 +408,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .nav__list a {
+    font-size: 2em;
+  }
+
   .header__menu {
     display: none;
   }
@@ -580,6 +593,26 @@ footer .developed h5:hover {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+  footer .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__working-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .swiper__main {
