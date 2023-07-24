@@ -38,16 +38,12 @@ header {
 }
 
 .catalog__main-items {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  margin-top: 1.5em;
-  gap: 1.7em;
+  display: grid;
+  grid-column-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 }
 
 .catalog__item-card {
-  width: 20em;
-  height: 27.5em;
   border-radius: 15px;
   margin: 1.5em 0 0 0;
   display: flex;
@@ -57,6 +53,7 @@ header {
 }
 .catalog__item-card img {
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .catalog__item-card:hover img {
@@ -191,13 +188,15 @@ header {
   width: 20em;
   height: 20em;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .product__main-items {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 1.5em;
+  gap: 1.7em;
 }
 
 .product__item-card {
@@ -205,11 +204,6 @@ header {
   height: 20em;
   border-radius: 15px;
   background-color: #ffffff;
-  margin: 1.5em 0 0 1.7em;
-}
-
-.product__item-card:nth-child(4n+1) {
-  margin: 1.5em 0 0 0;
 }
 
 .product__card-header {
@@ -248,18 +242,9 @@ details p {
   font-size: 0.75em;
 }
 
-@media (max-width: 1901px) {
-  .catalog__main-items {
-    justify-content: space-between;
-  }
-}
 @media (max-width: 1600px) {
   body {
     font-size: 18px;
-  }
-
-  .catalog__main-items {
-    justify-content: space-between;
   }
 }
 @media (max-width: 1280px) {
@@ -282,28 +267,52 @@ details p {
   }
 }
 @media (max-width: 621px) {
-  .catalog__main-items {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .catalog__item-card {
-    width: 30em;
-    height: 41.25em;
+  .section-header {
+    margin-top: 8em;
   }
 
   .catalog__card-header h3 {
     font-size: 2em;
   }
+
+  .swiper-product {
+    width: 30em;
+  }
+
+  .product__item-slider {
+    position: absolute;
+    z-index: 0;
+  }
+  .product__item-slider .swiper-slide img {
+    width: 30em;
+    height: 30em;
+  }
+
+  .product__card-header {
+    height: 4em;
+    line-height: 4em;
+    top: 26em;
+  }
+  .product__card-header p {
+    font-size: 1.5em;
+  }
+
+  details {
+    width: 28em;
+    top: 23em;
+  }
+  details summary {
+    cursor: pointer;
+    width: 18em;
+    font-size: 1.5em;
+  }
+  details p {
+    font-size: 1em;
+  }
 }
 @media (max-width: 480px) {
   body {
     font-size: 11px;
-  }
-
-  .catalog__item-card {
-    width: 25em;
-    height: 34.35em;
   }
 
   .catalog__card-header h3 {
@@ -348,6 +357,10 @@ ul {
 .logo__main {
   width: 12.5em;
   height: 3.5em;
+}
+
+.logo__header-mobile {
+  display: none;
 }
 
 .nav__list {
@@ -421,8 +434,16 @@ ul {
   }
 }
 @media (max-width: 480px) {
-  .header__mobile-menu {
+  .logo__header {
+    display: none;
+  }
+
+  .logo__header-mobile {
     display: block;
+  }
+  .logo__header-mobile img {
+    width: 6.5em;
+    height: 6.5em;
   }
 }
 footer {
@@ -697,6 +718,30 @@ footer .developed h5:hover {
   .swiper__main img {
     height: 40em;
     object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .swiper__main .swiper__text {
+    top: 14em;
+  }
+  .swiper__main dl {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .swiper__main .swiper__text {
+    top: 13em;
+  }
+  .swiper__main dl {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .swiper__main .swiper__text {
+    top: 13em;
+  }
+  .swiper__main dl {
+    width: 90%;
   }
 }
 .pots__main .catalog__main-items {

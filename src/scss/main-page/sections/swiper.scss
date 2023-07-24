@@ -29,9 +29,7 @@
     position: absolute;
     top: 15em;
     left: 18.75%;
-    //left: 24em;
     width: 62.5%;
-    //width: 60em;
     margin: auto;
   }
 
@@ -99,6 +97,45 @@
     img {
       height: 40em;
       object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper__main {
+
+    .swiper__text {
+      top: 14em;
+    }
+
+    dl {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper__main {
+
+    .swiper__text {
+      top: 13em;
+    }
+
+    dl {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .swiper__main {
+
+    .swiper__text {
+      top: 13em;
+    }
+
+    dl {
+      width: 90%;
     }
   }
 }

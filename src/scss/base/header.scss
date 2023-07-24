@@ -32,6 +32,9 @@ ul {
   width: 12.5em;
   height: 3.5em;
 }
+.logo__header-mobile {
+  display: none;
+}
 
 .nav__list {
   display: flex;
@@ -113,13 +116,21 @@ ul {
   .header__mobile-menu {
     display: block;
   }
-
-
 }
 
 @media (max-width: 480px) {
-  .header__mobile-menu {
+
+  .logo__header {
+    display: none;
+  }
+
+  .logo__header-mobile {
     display: block;
+
+    img {
+      width: 6.5em;
+      height: 6.5em;
+    }
   }
 }
 
