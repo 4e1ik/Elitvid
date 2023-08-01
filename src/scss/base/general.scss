@@ -238,15 +238,21 @@ header {
 }
 
 .product__main-items {
-  display: flex;
+/*  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 1.5em;
-  gap: 1.7em;
+  gap: 1.7em;*/
+
+  display: grid;
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  margin-top: 1.5em;
 }
 
 .product__item-card {
-  width: 20em;
+  //width: 20em;
   height: 20em;
   border-radius: 15px;
   background-color: #ffffff;
