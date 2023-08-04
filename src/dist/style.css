@@ -23,6 +23,7 @@ section {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 1em 0;
+  text-align: center;
 }
 .section-header h2 {
   font-size: 1.5em;
@@ -99,6 +100,7 @@ header {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 1em 0;
+  text-align: center;
 }
 .second_section-header h3 {
   font-size: 1.2em;
@@ -263,6 +265,10 @@ details p {
     font-size: 12px;
   }
 
+  .section-header {
+    margin-top: 0em;
+  }
+
   .gallery__main .gallery__main-header {
     margin: 0 1.5em 0 1.5em;
   }
@@ -275,8 +281,8 @@ details p {
   }
 }
 @media (max-width: 621px) {
-  .section-header {
-    margin-top: 8em;
+  .second_section-header {
+    margin: 2em 5em 0 5em;
   }
 
   .catalog__card-header h3 {
@@ -291,6 +297,10 @@ details p {
 @media (max-width: 480px) {
   body {
     font-size: 11px;
+  }
+
+  .second_section-header {
+    margin: 2em 2em 0 2em;
   }
 
   .catalog__card-header h3 {
@@ -721,13 +731,6 @@ footer .developed h5:hover {
   .swiper__main dl {
     width: 90%;
   }
-}
-.pots__main .catalog__main-items {
-  justify-content: space-between;
-}
-
-.texture__main .texture__main-header {
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

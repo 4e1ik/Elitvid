@@ -23,6 +23,7 @@ section {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 1em 0;
+  text-align: center;
 
   h2 {
     font-size: 1.5em;
@@ -116,6 +117,7 @@ header {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 1em 0;
+  text-align: center;
 
   h3 {
     font-size: 1.2em;
@@ -206,10 +208,6 @@ header {
       object-fit: cover;
     }
   }
-
-  //.gallery__item-card:nth-child(4n+1) {
-  //  margin: 0.75em 0 0 0;
-  //}
 }
 
 ///////////////////////////////////
@@ -218,44 +216,17 @@ header {
 ////Продукты////
 ////////////////
 
-.swiper-product {
-  //position: relative;
-  //position: absolute;
-  //width: 28em;
-  //overflow: hidden;
-
-  .swiper-button-next {
-    //height: 25em;
-  }
-
-  .swiper-button-prev {
-    //height: 25em;
-  }
-}
-
-.swiper-wrapper {
-  //position: absolute;
-  //overflow: hidden;
-}
-
 .product__item-slider {
-  //position: absolute;
   position: relative;
   z-index: 0;
   overflow: hidden;
 
   .swiper-slide {
     img {
-      //position: relative;
-      //position: absolute;
       width: 100%;
-      //left: 0;
-      //width: 20em;
       height: 20em;
       border-radius: 15px;
       object-fit: cover;
-      //z-index: 20;
-      //background-color: black;
     }
   }
 }
@@ -271,15 +242,12 @@ header {
 
 .product__item-card {
   position: relative;
-  //width: 20em;
   height: 20em;
   border-radius: 15px;
   background-color: #ffffff;
-  //overflow: hidden;
 }
 
 .product__card-header {
-  //position: relative;
   position: absolute;
   background-color: #000000;
   width: 100%;
@@ -289,11 +257,9 @@ header {
   line-height: 2em;
   top: 18em;
   text-transform: uppercase;
-  //z-index: 20;
 }
 
 details {
-  //position: relative;
   position: absolute;
   color: #ffffff;
   width: 18em;
@@ -356,6 +322,10 @@ details {
     font-size: 12px;
   }
 
+  .section-header {
+    margin-top: 0em;
+  }
+
   .gallery__main {
 
     .gallery__main-header {
@@ -370,16 +340,17 @@ details {
         margin: 2.5em 0 0 0;
       }
     }
-
   }
-
-
 }
 
 @media (max-width: 621px) {
 
   .section-header {
-    margin-top: 8em;
+    //margin-top: 8em;
+  }
+
+  .second_section-header {
+    margin: 2em 5em 0 5em;
   }
 
   .catalog__card-header {
@@ -387,48 +358,6 @@ details {
       font-size: 2em;
     }
   }
-
-
-  //.swiper-product {
-  //  width: 30em;
-  //}
-  //
-  //.product__item-slider {
-  //  position: absolute;
-  //  z-index: 0;
-  //
-  //  .swiper-slide {
-  //    img {
-  //      width: 30em;
-  //      height: 30em;
-  //    }
-  //  }
-  //}
-  //
-  //.product__card-header {
-  //  height: 4em;
-  //  line-height: 4em;
-  //  top: 26em;
-  //
-  //  p {
-  //    font-size: 1.5em;
-  //  }
-  //}
-  //
-  //details {
-  //  width: 28em;
-  //  top: 23em;
-  //
-  //  summary {
-  //    cursor: pointer;
-  //    width: 18em;
-  //    font-size: 1.5em;
-  //  }
-  //
-  //  p {
-  //    font-size: 1em;
-  //  }
-  //}
 
   .gallery__main-items {
 
@@ -442,6 +371,10 @@ details {
 @media (max-width: 480px) {
   body {
     font-size: 11px;
+  }
+
+  .second_section-header {
+    margin: 2em 2em 0 2em;
   }
 
   .catalog__card-header {
