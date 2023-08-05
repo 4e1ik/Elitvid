@@ -163,6 +163,7 @@ header {
   position: absolute;
   width: 10%;
   margin: auto;
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -315,6 +316,29 @@ details {
       margin: 2.5em 0 0 0;
     }
   }
+
+  .texture__card-header {
+    //display: block;
+    display: flex;
+    justify-content: center;
+    padding: 0.75em 5em;
+    background: rgba(255, 255, 255, 0.4);
+    border: 0.1em solid;
+    border-radius: 15px;
+    position: absolute;
+    width: 10%;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      cursor: auto;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -323,20 +347,20 @@ details {
   }
 
   .section-header {
-    margin-top: 0em;
+    margin-top: 7em;
   }
 
   .gallery__main {
 
     .gallery__main-header {
-      margin: 0 1.5em 0 1.5em;
+      margin: 7em 1.5em 0 1.5em;
     }
 
     .gallery__main-items {
-      margin: 0 8em 0 8em;
+      margin: 0 1.5em 0 1.5em;
 
       .gallery__item-card {
-        height: 25em;
+        height: 17.5em;
         margin: 2.5em 0 0 0;
       }
     }
@@ -359,11 +383,29 @@ details {
     }
   }
 
-  .gallery__main-items {
+  .gallery__main {
+    .gallery__main-items {
 
-    .gallery__item-card {
-      height: 14em;
-      margin: 1.5em 0 0 0;
+      margin: 0 4em 0 4em;
+
+      .gallery__item-card {
+        height: 14em;
+        margin: 1.5em 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 569px) {
+  .gallery__main {
+    .gallery__main-items {
+
+      margin: 0 4em 0 4em;
+
+      .gallery__item-card {
+        height: 28em;
+        margin: 1.5em 0 0 0;
+      }
     }
   }
 }
@@ -382,10 +424,40 @@ details {
       font-size: 1.5em;
     }
   }
+
+  .gallery__main {
+    .gallery__main-items {
+
+      margin: 0 4em 0 4em;
+
+      .gallery__item-card {
+        height: 25em;
+        //margin: 1.5em 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .gallery__main {
+    .gallery__main-items {
+      .gallery__item-card {
+        height: 20em;
+      }
+    }
+  }
 }
 
 @media (max-width: 320px) {
   body {
     font-size: 10px;
+  }
+
+  .gallery__main {
+    .gallery__main-items {
+      .gallery__item-card {
+        height: 13em;
+      }
+    }
   }
 }
