@@ -469,18 +469,17 @@ ul {
   .header__mobile-menu {
     display: block;
   }
-}
-@media (max-width: 480px) {
-  .logo__header {
+
+  .nav__list .nav__sublist .nav__sublist {
     display: none;
   }
-
-  .logo__header-mobile {
-    display: block;
+  .nav__list .nav__sublist a {
+    width: 15.55em;
   }
-  .logo__header-mobile img {
-    width: 6.5em;
-    height: 6.5em;
+}
+@media (max-width: 410px) {
+  .logo__header img {
+    height: 100%;
   }
 }
 footer {

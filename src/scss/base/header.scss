@@ -32,6 +32,7 @@ ul {
   width: 12.5em;
   height: 3.5em;
 }
+
 .logo__header-mobile {
   display: none;
 }
@@ -116,21 +117,44 @@ ul {
   .header__mobile-menu {
     display: block;
   }
+
+  .nav__list {
+    .nav__sublist {
+      .nav__sublist {
+        display: none;
+      }
+
+      a {
+        width: 15.55em;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
 
   .logo__header {
-    display: none;
+    //display: none;
   }
 
   .logo__header-mobile {
-    display: block;
+    //display: block;
 
     img {
-      width: 6.5em;
-      height: 6.5em;
+      //width: 6.5em;
+      //height: 6.5em;
     }
   }
 }
 
+@media (max-width: 410px) {
+
+  .logo__header {
+    //object-fit: cover;
+    //width: 40%;
+    img {
+      //width: 50%;
+      height: 100%;
+    }
+  }
+}
